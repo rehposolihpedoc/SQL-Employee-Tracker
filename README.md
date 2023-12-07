@@ -1,14 +1,9 @@
-# SQL-Employee-Tracker
+# SQL-Employee-Tracker 
 
 ## Description
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+CMS stands for content management system. It is a software application that helps end users create, edit, and manage content on a website without needing to write code. The Employee tracker is a simple of example of content management through a backend framework using predominantly Node and MySQL. This app allows the user to navigate through a database with payroll data.
 
-## Table of Contents (Optional)
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
@@ -16,7 +11,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-1. Clone the repo:
+1. Clone the repo: 
 
 
 ## Live Screen Recording of Application Functionality
