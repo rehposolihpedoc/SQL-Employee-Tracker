@@ -11,7 +11,13 @@ CMS stands for content management system. It is a software application that help
 
 ## Installation
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-1. Clone the repo: 
+1. Clone the repo: https://github.com/rehposolihpedoc/SQL-Employee-Tracker/tree/main
+2. Dowload Visual Studio Code IDE
+3. Download Node.js
+4. Download MySQL
+5. Inquire 
+6. NPM
+
 
 
 ## Live Screen Recording of Application Functionality
