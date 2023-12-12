@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "inquirer": "^8.2.4",
-    "mysql2": "^2.2.5"
+    "inquirer": "8.0",
+    "mysql2": "^2.3.3"
   },
   "scripts": {
     "start": "node --watch server.js"
@@ -10,7 +10,6 @@
   "description": "## employee tracking software",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "keywords": [],
   "author": "Yemi Ayeni",
   "license": "MIT"

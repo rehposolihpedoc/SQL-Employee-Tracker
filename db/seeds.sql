@@ -1,3 +1,5 @@
+USE employeetracking_db;
+
 INSERT INTO department (name)
 VALUES ("C-LEVEL"),
        ("RESEARCH"),
