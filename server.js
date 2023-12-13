@@ -33,7 +33,12 @@ const PORT = process.env.PORT || 3001;
 const newRoleAdd = async () => {
   try {
     console.log("Add a new role");
-    inquirer.prompt([
+    const [departmentRows, departmentFields] = await db
+    .promise()
+    .query(
+      "SELECT id AS value, name FROM department"
+    );
+    const answers = await inquirer.prompt([
       {
         type: "input",
         message: "What is the job title you want to add?",
@@ -45,21 +50,21 @@ const newRoleAdd = async () => {
         name: "addSalary",
       },
       {
-        type: "input",
+        type: "list",
         message: "What is the department name?",
         name: "addDepartment",
+        choices: departmentRows
       },
     ]);
     const [roleRows, roleFields] = await db
       .promise()
       .query(
         "INSERT INTO role(title, salary, department_id) VALUES (?, ?, ?)",
-        [answers.addTitle, answers.addSalary, answers.addDepartment]
+        [answers.addTitle, Number(answers.addSalary), answers.addDepartment]
       );
     console.log(roleRows);
 
     console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++");
-    console.log(roleFields);
 
     mainMenu();
   } catch (error) {
@@ -73,10 +78,10 @@ const viewEmployee = async () => {
     const [employeeRows, employeeFields] = await db
       .promise()
       .query("Select * From employee");
-    console.log(employeeRows);
+    console.table(employeeRows);
 
     console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++");
-    console.log(employeeFields);
+    
 
     mainMenu();
   } catch (error) {
@@ -90,10 +95,10 @@ const viewRole = async () => {
     const [roleRows, roleFields] = await db
       .promise()
       .query("Select * From role");
-    console.log(roleRows);
+    console.table(roleRows);
 
     console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++");
-    console.log(roleFields);
+  
 
     mainMenu();
   } catch (error) {
@@ -103,14 +108,14 @@ const viewRole = async () => {
 
 const viewAllDepartments = async () => {
   try {
-    console.log("View ALl Departments");
+    console.log("View All Departments");
     const [departmentRows, departmentFields] = await db
       .promise()
       .query("Select * From department");
-    console.log(departmentRows);
+    console.table(departmentRows);
 
     console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++");
-    console.log(departmentFields);
+
 
     mainMenu();
   } catch (error) {
@@ -138,7 +143,7 @@ const addEmployee = async () => {
         type: "list",
         name: "employeeRole",
         message: "What is the employees roles?",
-        choices: [
+        choices: [ 
 
         ]
       },
@@ -198,6 +203,8 @@ const mainMenu = async () => {
   }
   if (answers.userAction === "Exit application") {
     console.log("See you later!");
-    mainMenu();
+    process.exit(0)
   }
 };
+
+mainMenu();

@@ -14,19 +14,18 @@ What are the steps required to install your project? Provide a step-by-step desc
 1. Clone the repo: https://github.com/rehposolihpedoc/SQL-Employee-Tracker/tree/main
 2. Dowload Visual Studio Code IDE
 3. Download Node.js
-4. Download MySQL
+4. Download MySQL2
 5. Inquire 
 6. NPM
 
 
 
 ## Live Screen Recording of Application Functionality
-mp4 file or link
+
+https://watch.screencastify.com/v/rt5hOmjVkwDiafT3IDS6
 
 ## Usage
-Provide instructions and examples for use. Include screenshots as needed.
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-![alt text](assets/images/screenshot.png)
+![SQL Employee Tracker](./Media/Screenshot%202023-12-12%20at%204.45.06 PM.png)
 
 ## Credits
 People
@@ -40,11 +39,7 @@ Tutorials used
 ## Badges
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
-## Features
-If your project has a lot of features, list them here.
 
 ## How to Contribute
 This project is open to collaboration, if you choose to do so open an issue and modify any changes you would like to see on a feature branch and wait for approval before merging to the main branch.
 
-## Testing
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.

@@ -12,19 +12,15 @@ INSERT INTO role (title, salary, bonus, department_id)
 VALUES ("CEO", 750000, 100000,  1),
        ("CFO", 450000, 50000, 1),
        ("CTO", 450000, 50000, 1),
-
        ("Research Lead", 250000, 30000, 2 ),
        ("R&D Manager", 200000, 20000, 2),
        ("Research Scientist", 150000, 10000, 2),
-       
        ("VP of Engineering", 250000, 30000, 3),
        ("Lead Engineer", 200000, 20000, 3),
        ("Engineer Supervisor", 175000, 10000, 3),
-
        ("VP of Sales", 350000, 150000, 4),
        ("Sales Lead", 250000, 75000, 4),
-       ("Sale Engineer", 175000, 50000 4),
-
+       ("Sale Engineer", 175000, 50000, 4),
        ("VP of Marketing", 300000, 100000, 5),
        ("Marketing Lead", 200000, 50000, 5),
        ("Marketing manager", 100000, 25000, 5);
