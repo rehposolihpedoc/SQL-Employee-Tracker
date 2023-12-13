@@ -1,4 +1,4 @@
-# SQL-Employee-Tracker 
+# SQL-Employee-Tracker 🚀🚀🚀
 
 ## Description
 CMS stands for content management system. It is a software application that helps end users create, edit, and manage content on a website without needing to write code. The Employee tracker is a simple of example of content management through a backend framework using predominantly Node and MySQL. This app allows the user to navigate through a database with payroll data.
